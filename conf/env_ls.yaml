@@ -1,0 +1,14 @@
+programs:
+  env1:
+    cmd: "/usr/bin/env"
+    starttime: 0
+    autorestart: unexpected
+    numprocs: 10
+    env:
+      test: caca
+  ls:
+    cmd: "/bin/ls -l"
+    autorestart: False
+    numprocs: 10
+    starttime: 0
+

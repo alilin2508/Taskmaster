@@ -1,0 +1,22 @@
+programs:
+  ls:
+    cmd: "/usr/bin/ls"
+    startretries: 2
+    numprocs: 10
+    autostart: True 
+    autorestart: True
+    starttime: 0
+    stoptime: 10
+    stopsignal: "TERM"
+    exitcodes: [0]
+
+  ls1:
+    cmd: "/usr/bin/ls"
+    startretries: 2
+    numprocs: 10
+    autostart: error 
+    autorestart: False
+    starttime: 0
+    stoptime: 10
+    stopsignal: "TERM"
+    exitcodes: [0]
